@@ -27,34 +27,44 @@ else:
 #  re.search("[$#@]",string) - Searches for special characters in the string
 #  re.search("\s",string) - Searches for white-space character in the string
 
-# Using the information given in above, complete the Python program to check the strength of a password .
-# You need to check for the following:
-#   -Has at least one number.
-#   -Has at least one uppercase and one lowercase character.
-#   -Has at least one special symbol.
-#   -Should be between 6 to 20 characters long.
-# Uncomment the statement and complete the program
-#import re                                                 
-#p= input("Input your password: ")
-#x = True
-#while x:                          # while loop
+
+# string= "gUnjan"
+# result = re.search("[a-z][A-Z]", string)
+# if result:
+#   print("Lowercase found")
+# else:
+#   print("No lowercase")
+
+
+# # Using the information given in above, complete the Python program to check the strength of a password .
+# # You need to check for the following:
+# #   -Has at least one number.
+# #   -Has at least one uppercase and one lowercase character.
+# #   -Has at least one special symbol.
+# #   -Should be between 6 to 20 characters long.
+# # Uncomment the statement and complete the program
+# import re                                                 
+# p= input("Input your password: ")
+# x = True
+# while x:                          # while loop
 #  if (len(p)<6 or len(p)>20):     # Password length
 #      break                       # break statement
-#  elif :                          # Lowercase validation
+#  elif not re.search("[a-z]", p) :    # Lowercase validation
+#      break 
+#  elif not re.search("[0-9]",p):
+#    break                              # check for number              
       
-#  elif not                     # check for number              
-      
-#  elif not:                    # check for uppercase
+#  elif not re.search("[A-Z]",p):         # check for uppercase
 #      break
-#  elif not :                   #check for special character
+#  elif not re.search("[$#@]",p):     #check for special character
 #      break
-#  elif:                      #check for whitespace character
+#  elif re.search("\s",p):   #check for whitespace character
 #      break
 #  else:
 #      print("Valid Password")
 #      x=False
 #      break
-#if x:
+# if x:
 #  print("Not a Valid Password")
 
 '''Task 2: How many vowels are in your name?'''
@@ -63,6 +73,13 @@ print()
 # Write a program that takes the user’s name as the input
 # If there are no vowels in the name, display a message -  “You have a unique with no vowels!!”
 # If vowels are present in the name, display a message -”You have a lovely name!”
+# import re
+# name=input("Write your name: ")
+# name= name.lower()
+# if re.search("[aeoiu]",name):
+#   print("You have a normal name like any other normal human being.")
+# else:
+#   print("Your name has not a single vowel are you even a human? or you are  just special (I mean your parents because they gave you the name)")  
 
 
 '''Task 3: This or That'''
@@ -70,5 +87,16 @@ print("***** Task 2:******")
 print()
 # Write a program that asks the user to input any text. The text could be a couple of words or a line or a quote.
 # Your program must find if the text entered by the user has the word “this” or “that”.
+import re
+text=input("You have to write a text or a line or a quote, basiclly write anything you want: ")
+text=text.lower()
+if re.search("this",text):
+  print("you have the word'this'in the thing that you wrote")
+else:
+  print("Sadly you don't have the word'this'in the thing you've written")
+if re.search("that",text):
+  print("You have the word'that'in thing you wrote") 
+else:
+  print("Sadly you don't have the word'that'in the thing you've written")   
 
 '''Fantastic!! You are getting confident in working with in-built Python modules/packages. Way to go!!'''

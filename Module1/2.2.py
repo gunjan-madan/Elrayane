@@ -3,8 +3,8 @@ print(" ")
 print("*** Task 1:***")
 
 #How to take input from user
-random_input=input()
-print(random_input)
+# random_input=input()
+# print(random_input)
 
 '''********Task 2: Input with questions*****'''
 print(" ")
@@ -20,11 +20,13 @@ print("*** Task 3:***")
 #DIY
 #Take two inputs from user: firstname and Lastname.
 #Print Full name "Hello <firstname> <lastname>"
-
+fnme=input("Type your name: ")
+lnme=input("write your last name: ")
+print("Welcome "+fnme+" "+lnme)
 
 '''********Task 4: Change the input*****'''
 print(" ")
 print("*** Task 4:***")
 #Variables value can be changed using code.
-# Name ="Batman"
-# print(Name)
+Name ="Batman"
+print(Name)

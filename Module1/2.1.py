@@ -47,4 +47,8 @@ lastName= "Madan"
 print(firstName+lastName)
 
 #DIY
-#Take three variables day, month and year. Assign them today's values and print them all in one line.
+#Take three variables day, month and year. Assign them today's values and print them all in one line
+td='20'
+mon="October"
+yer='2021'
+print(td+"/"+mon+"/"+yer)

@@ -15,5 +15,16 @@ print("*** Task 1: ***")
 # He asks you to give the measurement for both so that he can get the materials.
 # You decide to write a Python program to calculate the measures.
 # So why wait, get programming!!
-# Hint: For fencing, you need to get the perimeter of the sports field which is rectangular ( formula: perimeter - 2(length + width))
-# Hint: For the artificial turf/grass, you need to get the area of the rectangular hockey pitch (Area = length * width] 
+# Hint: For fencing, you need to get the perimeter of the sports field which is rectangular ( formula: perimeter - 2 x(length + width))
+# Hint: For the artificial turf/grass, you need to get the area of the rectangular hockey pitch (Area = length * width]
+#Fence measurments for both hockey and football pitchs
+F_P_P=(91.5+55)*2
+H_P_P=(27+20.5)*2
+print("The fence measurments for the footbal pitch would be: ",F_P_P)
+print("The fence measurments for the hockey pitch would be: ",H_P_P)
+#the artificial turf/grass for the hockey pitch
+L=27
+W=20.5
+A_of_H_P=L*W
+Total=A_of_H_P
+print("The artificial turf/grass you'll need for the hockey pitch is: ",Total)

@@ -1,5 +1,4 @@
 
-
 '''Task1: Global vs Local Variables'''
 print("***** Task 1: *****")
 print()
@@ -11,7 +10,8 @@ print()
 # def f():  
 #     s = "Me too."
 #     print(s) 
-    
+
+ 
 # # Global scope 
 # s = "I love python" 
 # f() 
@@ -32,7 +32,7 @@ print()
 
 # def f():  
 #     global s
-#     #s="me too"
+#     s="me too"
 #     print(s) 
     
 # # Global scope 
@@ -51,3 +51,15 @@ print()
 # --> Takes an input value from the user and adds it to the balance. 
 # --> Displays the updated balance value
 # - Use a for loop, to call the function thrice.
+bal=2000
+def balance(value):
+  global bal
+  bal= bal+ value
+  
+
+  
+for i in range(9):
+  n=float(input("Write an amount of money: "))
+  balance(n)
+print(bal)  
+ 

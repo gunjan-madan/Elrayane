@@ -10,6 +10,16 @@ print()
 # Once the user is done,the program must print
 # - Total cost  of the goods 
 # - Total number of goods.
+# c=0
+# t=0
+# p=3
+# while p>0:
+#   p=float(input("Enter a price for a product (Press '0' to quit): "))
+#   if p!=0:
+#     t=t+p
+#     c=c+1
+# print("The total cost of all your products is: ",t)  
+# print("The total number of all your products is: ",c)
 
 
 
@@ -36,11 +46,16 @@ print()
 # - deathrate=0.023
 # - Reduction can be taken as 0.1.
 # Hint1: Target population can be calculated as population * reduction
-# Hint2: Change in population can be calculated using the formula (current_pop * birthrate) - (current_pop * deathrate)
+# Hint2: Change in population can be calculated using the formula (current_pop * deathrate) - (current_pop * birthrate)
 
-
-
-
-
+pop=10000000
+trp= pop*0.1
+cp=0
+y=0
+while pop>trp:
+  cp=(pop*0.023)-(pop*0.015)
+  pop=pop-cp
+  y=y+1
+print("Total number of years is:",y)
 
 '''Great! You are exceptionally good at coming out with programming solutions. Way to go!!'''

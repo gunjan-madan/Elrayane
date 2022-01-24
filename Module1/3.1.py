@@ -16,17 +16,21 @@ print(division)
 #Subtract two numbers so that result is 20
 #Multiply two numbers so that result is 20
 #Divide two numbers so that result is 20
-
+adding= 12 +8
+subtracting= 25 -5
+multiplying= 5*4
+dividing= 40/2
+print(adding, subtracting, multiplying, dividing)
 '''*****Task 2:  More Arithmetic Operators*****'''
 print(" ")
 print("*** Task 2:***")
 # Uncomment the below statements and click Run
-#t=5//3
-#v=7%4
-#w=2**3
-#print(t)
-#print(v)
-#print(w)
+t=5//3
+v=7%4
+w=2**3
+print(t)
+print(v)
+print(w)
 # What did you get? Do you know why? 
 # The // operator divides the 5  by 3 and only gives the integer value, not the remainder
 # The % (modulus) operator gives the remainder when 7 is divided by 4.
@@ -35,8 +39,12 @@ print("*** Task 2:***")
 #DIY
 #Use to operators to print Quotient and Remainder when we divide 126 by 3
 #Print 4^5 using the operators
-
-
+Q=126//3
+R=126%3
+P=4**5
+print(Q)
+print(R)
+print(P)
 
 '''*****Task 3: Magical Piggy Bank******'''
 print(" ")
@@ -48,4 +56,8 @@ print("*** Task 3:***")
 # Later you realise if you don't check the piggy bank by the end of the week it will take away 1 coin. 
 # How much will you be left with ? 
 # Had it come true you would have to share half of the coins with me? Now how much will you be left with?
-
+multiplying=2*365
+weeks_year =365//7
+Total_coins=(multiplying-weeks_year)
+Total_coins_left= Total_coins/2
+print("The total amount of money that I have left on my piggy bank is ",Total_coins_left)

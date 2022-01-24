@@ -8,4 +8,6 @@ print("*** Task 1:***")
 # Remember to mention that the temperature input required should be in fahrenheit.
 # Convert the temperature using the formula given above.
 # Now display the result
-
+F=float(input("temprature measured in fahrenheit: "))
+C=(F-32) * 5/9
+print("The tamparature in Celcius is: ", C)
